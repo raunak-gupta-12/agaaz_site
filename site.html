@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            position: relative;
+            background: #0e0e0e;
+            font-family: "Open Sans";
+        }
+        
+        #wrap {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            overflow: hidden;
+            background-color: #284e7e;
+        }
+        
+        #wrap p {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+        
+        .ball {
+            pointer-events: none;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: gray;
+            animation: implode 1s ease-in-out;
+            animation-fill-mode: both;
+            opacity: .5;
+        }
+        
+        @keyframes implode {
+            100% {
+                transform: scale(0);
+            }
+        }
+        
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(359deg);
+            }
+        }
+        
+        .logo2 {
+            width: 50vw;
+            height: 44vw;
+            position: absolute;
+            top: 5vw;
+            right: 25vw;
+        }
+        
+        .logo {
+            width: 100vw;
+            height: 6vw;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            z-index: 10;
+        }
+        
+        .btn1 {
+            width: 12%;
+            height: 5vw;
+            opacity: 0.7;
+            color: #FFFFFF;
+            font-family: Constantia;
+            font-size: 2.2vw;
+            -webkit-transition: all ease 0.5s;
+            -moz-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+            -ms-transition: all ease 0.5s;
+            transition: all ease 0.5s;
+            z-index: 13;
+        }
+        
+        #loading {
+            width: 260vw;
+            height: 160vw;
+            position: absolute;
+            left: -81vw;
+            top: -58vw;
+            overflow: hidden;
+            opacity: 0.2;
+            -webkit-animation: rotation 420s infinite linear;
+        }
+        
+        #eyel {
+            width: 30vw;
+            height: 40vw;
+            position: absolute;
+            top: 2.5vw;
+            left: 12.5vw;
+            -webkit-transition: all ease-out 0.5s;
+            -moz-transition: all ease-out 0.5s;
+            -o-transition: all ease-out 0.5s;
+            -ms-transition: all ease-out 0.5s;
+            transition: all ease-out 0.5s;
+        }
+        
+        #eyer {
+            width: 30vw;
+            height: 40vw;
+            position: absolute;
+            top: 2.5vw;
+            left: 56vw;
+            -webkit-transition: all ease-out 0.5s;
+            -moz-transition: all ease-out 0.5s;
+            -o-transition: all ease-out 0.5s;
+            -ms-transition: all ease-out 0.5s;
+            transition: all ease-out 0.5s;
+        }
+        
+        #centrelogo {
+            width: 30vw;
+            height: 30vw;
+            position: absolute;
+            top: 7vw;
+            left: 34vw;
+        }
+        
+        @media only screen and (max-width: 900px) {
+            #loading {
+                width: 260vw;
+                height: 160vw;
+                position: absolute;
+                left: -81vw;
+                top: -18vw;
+                overflow: hidden;
+                opacity: 0.2;
+            }
+            #eyel {
+                width: 30vw;
+                height: 40vw;
+                position: absolute;
+                top: 42.5vw;
+                left: 12.5vw;
+                -webkit-transition: all ease-out 0.5s;
+                -moz-transition: all ease-out 0.5s;
+                -o-transition: all ease-out 0.5s;
+                -ms-transition: all ease-out 0.5s;
+                transition: all ease-out 0.5s;
+            }
+            #eyer {
+                width: 30vw;
+                height: 40vw;
+                position: absolute;
+                top: 42.5vw;
+                left: 56vw;
+                -webkit-transition: all ease-out 0.5s;
+                -moz-transition: all ease-out 0.5s;
+                -o-transition: all ease-out 0.5s;
+                -ms-transition: all ease-out 0.5s;
+                transition: all ease-out 0.5s;
+            }
+            #centrelogo {
+                width: 30vw;
+                height: 30vw;
+                position: absolute;
+                top: 46.5vw;
+                left: 34vw;
+            }
+        }
+
+     </style>
+</head>
+
+<script>
+    function colorichange(clicked_id) {
+        document.getElementById(clicked_id).style.opacity = "1";
+    }
+
+    function colorochange(clicked_id) {
+
+        document.getElementById(clicked_id).style.opacity = "0.7";
+    }
+
+    function colorcchange(clicked_id) {
+
+        document.getElementById(clicked_id).style.opacity = "1";
+
+       }
+
+    function eyeopen(clicked_id) {
+        document.getElementById("eyer").style.left = "57.5vw";
+        document.getElementById("eyel").style.left = "11vw";
+    }
+
+    function eyeclose(clicked_id) {
+        document.getElementById("eyer").style.left = "56vw";
+        document.getElementById("eyel").style.left = "12.5vw";
+    }
+</script>
+
+
+</head>
+
+<body translate="no" style="overflow-x: hidden;">
+    <div id="wrap">
+        <img src="rain.png" id="loading" />
+        <img onmouseover="eyeopen()" onmouseout="eyeclose()" src="images/logo.png" id="centrelogo" />
+        <img src="Eye_Left.png" id="eyel" />
+        <img src="Eye_Right-min.png" id="eyer" />
+        <img class="foot" style="opacity:1;position:absolute;bottom:-1.2vw;left:32vw;width:38vw;height:6vw;" src="Footer_middle.png" />
+        <a href="https://instagram.com/fusionitgcet"> <img href="www.google.com" class="icon" style="width:6.2vw;height:3.2vw; opacity:1;position:absolute;bottom:0vw;left:37.5vw;" src="11.png" /></a>
+        <a href="https://youtube.com/c/GalgotiasUniversity_1"><img class="icon" style="width:3vw;height:2.3vw;opacity:1;position:absolute;bottom:0.5vw;left:46vw;" src="12.png" /></a>
+        <a href="https://twitter.com/Galgotiagcet?t=H_5MSr0nAER_3kkWF_Pzfw&s=09"><img class="icon" style="width:3vw;height:2.3vw;opacity:1;position:absolute;bottom:0.5vw;left:54vw;" src="13.png" /></a>
+        <a href="https://www.facebook.com/GalgotiasCollege/"><img class="icon" style="width:3vw;height:2.5vw;opacity:1;position:absolute;bottom:0.7vw;left:59vw;" src="3.png" /></a>
+    </div>
+
+
+
+
+
+    <script src="./jquery.min.js"></script>
+    <script id="rendered-js">
+        $(document).ready(function() {
+
+            var mousePos = {};
+
+            function getRandomInt(min, max) {
+                return Math.round(Math.random() * (max - min + 1)) + min;
+            }
+
+            $(window).mousemove(function(e) {
+                mousePos.x = e.pageX;
+                mousePos.y = e.pageY;
+            });
+
+            $(window).mouseleave(function(e) {
+                mousePos.x = -1;
+                mousePos.y = -1;
+            });
+
+            var draw = setInterval(function() {
+                if (mousePos.x > 0 && mousePos.y > 0) {
+
+                    var range = 15;
+
+                    var color = "background: rgb(" + getRandomInt(0, 255) + "," + getRandomInt(0, 255) + "," + getRandomInt(0, 255) + ");";
+
+                    var sizeInt = getRandomInt(10, 30);
+                    size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
+
+                    var left = "left: " + getRandomInt(mousePos.x - range - sizeInt, mousePos.x + range) + "px;";
+
+                    var top = "top: " + getRandomInt(mousePos.y - range - sizeInt, mousePos.y + range) + "px;";
+
+                    var style = left + top + color + size;
+                    $("<div class='ball' style='" + style + "'></div>").appendTo('#wrap').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function() {
+                        $(this).remove();
+                    });
+                }
+            }, 1);
+        });
+    </script>
+
+
+
+
+    <div id="pctopbar">
+        <img class="logo" src="Header.png" />
+        <div class="btn1" id="Home" onclick="colorcchange(this.id)" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:absolute;top:0%;left:3.4%;">
+            <p style="position:absolute;top:1%;left:2%;">Home</p>
+        </div>
+
+        <div class="btn1" id="Events" onclick="colorcchange(this.id)" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:absolute;top:0%;left:13.4%;">
+            <p style="position:absolute;top:2%;left:16%;">Events</p>
+        </div>
+
+        <div class="btn1" id="Team" onclick="colorcchange(this.id)" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:absolute;top:-2vw;left:26.4%;">
+            <p style="position:absolute;top:0%;left:14%;">Team</p>
+        </div>
+
+        <div class="btn1" id="Sponsors" onclick="colorcchange(this.id)" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:absolute;top:-2vw;left:65%;">
+            <p style="position:absolute;top:0%;left:16%;">Sponsors</p>
+        </div>
+        <div class="btn1" id="About" onclick="colorcchange(this.id)" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:absolute;top:0%;left:77.4%;">
+            <p style="position:absolute;top:2%;left:13%;">About us</p>
+        </div>
+
+        <div class="btn1" id="Vscc" onclick="colorcchange(this.id)" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:absolute;top:0%;left:90.4%;">
+            <p style="position:absolute;top:1%;left:2%;">Contact</p>
+        </div>
+
+        <img class="lofo" style="width:25vw; height:21vw;position:absolute;top:-7.7vw;left:37.5vw;z-index:15;" src="lofo.png" />
+
+
+
+        <img id="side1" style="position:fixed;bottom:0vw;left:0vw; height:5vw;width:20vw;" src="LFooter_Side.png" />
+        <img id="side2" style="position:fixed;bottom:0vw;right:0vw; height:5vw;width:20vw;" src="RFooter_Side.png" />
+
+        <div class="btn1" id="Schedule" onclick="window.open('schedule.pdf')" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:fixed;bottom:1%;left:3.4%;">
+            <p style="position:absolute;top:1%;left:2%;">Schedule</p>
+        </div>
+
+        <div class="btn1" id="Notices" onclick="window.open('notices.pdf')" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:fixed;bottom:1%;left:87.4%;">
+            <p style="position:absolute;top:2%;left:2%;">Notices</p>
+        </div>
+
+    </div>
+</body>
+</html>
