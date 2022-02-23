@@ -183,9 +183,553 @@
                 left: 34vw;
             }
         }
+        
+        .eventpc {
+            width: 100%;
+            height: 100%;
+            position: auto;
+            background-color: #0d0d0d;
+            top: 2vw;
+            right: 0vw;
+            visibility: hidden;
+            z-index: 4;
+            overflow: auto;
+            -webkit-transition: all ease-out 0.001s;
+            -moz-transition: all ease-out 0.001s;
+            -o-transition: all ease-out 0.001s;
+            -ms-transition: all ease-out 0.001s;
+            ;
+            transition: all ease-out 0.001s;
+        }
+        
+        .sponsorspc {
+            width: 96%;
+            height: 38vw;
+            display: flex;
+            flex-flow: row wrap;
+            position: absolute;
+            background-color: #fce8da;
+            top: 10vw;
+            left: 2vw;
+            visibility: hidden;
+            z-index: 4;
+            overflow: hidden;
+            -webkit-transition: all ease-out 0.001s;
+            -moz-transition: all ease-out 0.001s;
+            -o-transition: all ease-out 0.001s;
+            -ms-transition: all ease-out 0.001s;
+            ;
+            transition: all ease-out 0.001s;
+            border-radius: 20px;
+        }
+        
+        .aboutpc {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background-color: #6f437e;
+            top: 0vw;
+            left: 0vw;
+            visibility: hidden;
+            z-index: 105;
+            overflow: hidden;
+            -webkit-transition: all ease-out 0.001s;
+            -moz-transition: all ease-out 0.001s;
+            -o-transition: all ease-out 0.001s;
+            -ms-transition: all ease-out 0.001s;
+            ;
+            transition: all ease-out 0.001s;
+        }
+    </style>
 
-     </style>
+
+
+    <style>
+        .teampc {
+            visibility: hidden;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #10729c;
+            background-image: -moz-radial-gradient(100% 200%, ellipse cover, #10729c, #000030 100%);
+            background-image: -webkit-radial-gradient(100% 200%, ellipse cover, #10729c, #000030 100%);
+            background-image: -o-radial-gradient(100% 200%, ellipse cover, #10729c, #000030 100%);
+            background-image: -ms-radial-gradient(100% 200%, ellipse cover, #10729c, #000030 100%);
+            background-image: radial-gradient(100% 200%, ellipse cover, #10729c, #000030 100%);
+            -webkit-transition: all ease-out 0.001s;
+            -moz-transition: all ease-out 0.001s;
+            -o-transition: all ease-out 0.001s;
+            -ms-transition: all ease-out 0.001s;
+            transition: all ease-out 0.001s;
+        }
+        
+        .contactpc {
+            visibility: hidden;
+            height: 0%;
+            width: 100%;
+            position: absolute;
+            top: 0%;
+            background-image: -moz-radial-gradient(100% 200%, ellipse cover, #10729c, #000030 100%);
+            background-image: -webkit-radial-gradient(100% 200%, ellipse cover, #10729c, #000030 100%);
+            background-image: -o-radial-gradient(100% 200%, ellipse cover, #10729c, #000030 100%);
+            background-image: -ms-radial-gradient(100% 200%, ellipse cover, #10729c, #000030 100%);
+            background-image: radial-gradient(100% 200%, ellipse cover, #10729c, #000030 100%);
+            -webkit-transition: all ease-out 0.001s;
+            -moz-transition: all ease-out 0.001s;
+            -o-transition: all ease-out 0.001s;
+            -ms-transition: all ease-out 0.001s;
+            transition: all ease-out 0.001s;
+        }
+    </style>
+
+
+
+    <style>
+        .bloc {
+            display: block;
+            height: 20vw;
+            width: 20vw;
+            background-color: #3559af;
+            -webkit-transition: all ease 0.5s;
+            -moz-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+            -ms-transition: all ease 0.5s;
+            transition: all ease 0.5s;
+        }
+        
+        #event1 {
+            height: 24vw;
+            width: 23vw;
+            position: absolute;
+            top: 6vw;
+            left: 4vw;
+        }
+        
+        #event2 {
+            height: 23vw;
+            width: 23vw;
+            position: absolute;
+            top: 31vw;
+            left: 4vw;
+        }
+        
+        #event3 {
+            height: 30vw;
+            width: 23vw;
+            position: absolute;
+            top: 6vw;
+            left: 28vw;
+        }
+        
+        #event4 {
+            height: 17vw;
+            width: 23vw;
+            position: absolute;
+            top: 37vw;
+            left: 28vw;
+        }
+        
+        #event5 {
+            height: 22vw;
+            width: 23vw;
+            position: absolute;
+            top: 6vw;
+            left: 52vw;
+        }
+        
+        #event6 {
+            height: 25vw;
+            width: 23vw;
+            position: absolute;
+            top: 29vw;
+            left: 52vw;
+        }
+        
+        #event7 {
+            height: 26vw;
+            width: 22vw;
+            position: absolute;
+            top: 6vw;
+            left: 76vw;
+        }
+        
+        #event8 {
+            height: 21vw;
+            width: 22vw;
+            position: absolute;
+            top: 33vw;
+            left: 76vw;
+        }
+		#event9 {
+            height: 24vw;
+            width: 23vw;
+            position: absolute;
+            top: 55vw;
+            left: 4vw;
+        }
+        
+        #event10 {
+            height: 23vw;
+            width: 23vw;
+            position: absolute;
+            top: 80vw;
+            left: 4vw;
+        }
+        
+        #event11 {
+            height: 30vw;
+            width: 23vw;
+            position: absolute;
+            top: 55vw;
+            left: 28vw;
+        }
+        
+        #event12 {
+            height: 17vw;
+            width: 23vw;
+            position: absolute;
+            top: 86vw;
+            left: 28vw;
+        }
+		#event13 {
+            height: 22vw;
+            width: 23vw;
+            position: absolute;
+            top: 55vw;
+            left: 52vw;
+        }
+        
+        #event14 {
+            height: 25vw;
+            width: 23vw;
+            position: absolute;
+            top: 78vw;
+            left: 52vw;
+        }
+        
+        #event15 {
+            height: 26vw;
+            width: 22vw;
+            position: absolute;
+            top: 55vw;
+            left: 76vw;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            #event1 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 5vw;
+                left: 10vw;
+            }
+            #event2 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 5vw;
+                left: 54vw;
+            }
+            #event3 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 45vw;
+                left: 10vw;
+            }
+            #event4 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 45vw;
+                left: 54vw;
+            }
+            #event5 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 85vw;
+                left: 10vw;
+            }
+            #event6 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 85vw;
+                left: 54vw;
+            }
+            #event7 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 125vw;
+                left: 10vw;
+            }
+            #event8 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 125vw;
+                left: 54vw;
+            }
+			 #event9 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 5vw;
+                left: 10vw;
+            }
+            #event10 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 5vw;
+                left: 54vw;
+            }
+            #event11 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 45vw;
+                left: 10vw;
+            }
+            #event12 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 45vw;
+                left: 54vw;
+            }
+            #event13 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 85vw;
+                left: 10vw;
+            }
+			#event14 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 85vw;
+                left: 54vw;
+            }
+            #event15 {
+                height: 34vw;
+                width: 36vw;
+                position: absolute;
+                top: 125vw;
+                left: 10vw;
+            }
+        }
+        
+        .cf {
+            height: 50%;
+            width: 50%;
+            position: relative;
+            top: 20%;
+            left: 26%;
+            color: #ffffff;
+            background-color: #0A0A0A;
+            border-radius: 100%;
+            -webkit-transition: all ease-out 0.5s;
+            -moz-transition: all ease-out 0.5s;
+            -o-transition: all ease-out 0.5s;
+            -ms-transition: all ease-out 0.5s;
+            transition: all ease-out 0.5s;
+            opacity: 0;
+        }
+        
+        .eventname {
+            position: relative;
+            top: 36%;
+            left: 15%;
+            font-family: Roboto;
+            font-size: 1.5vw;
+            white-space: pre;
+        }
+        
+        .h {
+            height: 98%;
+            width: 48%;
+            position: fixed;
+            top: 1%;
+            left: -51%;
+            background-color: #faf5f5;
+            -webkit-transition: all ease 0.5s;
+            -moz-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+            -ms-transition: all ease 0.5s;
+            transition: all ease 0.5s;
+            overflow: hidden;
+            z-index: 10;
+        }
+        
+        .slideshow {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            -webkit-transition: all ease 0.5s 0.5s;
+            -moz-transition: all ease 0.5s 0.5s;
+            -o-transition: all ease 0.5s 0.5s;
+            -ms-transition: all ease 0.5s 0.5s;
+            transition: all ease 0.5s 0.5s;
+            z-index: 10;
+        }
+        
+        .k {
+            height: 98%;
+            width: 48%;
+            position: fixed;
+            top: 1%;
+            left: 149%;
+            background-color: #efdcd3;
+            -webkit-transition: all ease 0.5s;
+            -moz-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+            -ms-transition: all ease 0.5s;
+            transition: all ease 0.5s;
+            padding: 1%;
+            overflow: auto;
+            z-index: 10;
+        }
+		.slideshow2 {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            -webkit-transition: all ease 0.5s 0.5s;
+            -moz-transition: all ease 0.5s 0.5s;
+            -o-transition: all ease 0.5s 0.5s;
+            -ms-transition: all ease 0.5s 0.5s;
+            transition: all ease 0.5s 0.5s;
+            z-index: 10;
+        }
+        
+        
+        .name {
+            position: absolute;
+            top: -0.2vw;
+            left: 12vw;
+            font-size: 4vw;
+            font-family: impact;
+            z-index: 10;
+        }
+        
+        .main {
+            display: block;
+            position: absolute;
+            top: 8vw;
+            left: 1.5vw;
+            font-size: 2.5vw;
+            font-family: antonio;
+            z-index: 10;
+        }
+        
+        .close {
+            height: 4vw;
+            width: 10vw;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            background-color: #4f8f1c;
+            color: #ffffff;
+            -webkit-transition: all ease 0.2s;
+            -moz-transition: all ease 0.2s;
+            -o-transition: all ease 0.2s;
+            -ms-transition: all ease 0.2s;
+            transition: all ease 0.2s;
+            z-index: 10;
+        }
+        
+        .photos {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .f {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .btn {
+            height: 7%;
+            width: 5%;
+            color: #ffffff;
+            visibility: hidden;
+            position: fixed;
+            -webkit-transition: all ease 0.1s;
+            -moz-transition: all ease 0.1s;
+            -o-transition: all ease 0.1s;
+            -ms-transition: all ease 0.1s;
+            transition: all ease 0.1s;
+            z-index: 11;
+        }
+        
+        #forwar {
+            position: fixed;
+            top: 45%;
+            left: 42%;
+        }
+        
+        #backwar {
+            position: fixed;
+            top: 45%;
+            left: 3%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .h {
+                height: 48%;
+                width: 98%;
+                position: fixed;
+                top: 1%;
+                left: -151%;
+                background-color: #faf5f5;
+                -webkit-transition: all ease 0.5s;
+                -moz-transition: all ease 0.5s;
+                -o-transition: all ease 0.5s;
+                -ms-transition: all ease 0.5s;
+                transition: all ease 0.5s;
+                overflow: hidden;
+                z-index: 10;
+            }
+            .k {
+                height: 48%;
+                width: 98%;
+                position: fixed;
+                top: 50%;
+                left: -151%;
+                background-color: #efdcd3;
+                -webkit-transition: all ease 0.5s;
+                -moz-transition: all ease 0.5s;
+                -o-transition: all ease 0.5s;
+                -ms-transition: all ease 0.5s;
+                transition: all ease 0.5s;
+                padding: 1%;
+                overflow: hidden;
+                z-index: 10;
+            }
+            #forwar {
+                position: fixed;
+                top: 18%;
+                left: 92%;
+            }
+            #backwar {
+                position: fixed;
+                top: 18%;
+                left: 3%;
+            }
+        }
+    </style>
+
+
 </head>
+
+<script>
+    window.console = window.console || function(t) {};
+</script>
 
 <script>
     function colorichange(clicked_id) {
@@ -201,7 +745,112 @@
 
         document.getElementById(clicked_id).style.opacity = "1";
 
-       }
+        if (clicked_id == "Events") {
+            document.getElementById("eventpc").style.visibility = "visible";
+            document.getElementById("wrap").style.visibility = "hidden";
+            document.getElementById("teampc").style.visibility = "hidden";
+            document.getElementById("sponsorspc").style.visibility = "hidden";
+            document.getElementById("aboutpc").style.visibility = "hidden";
+            document.getElementById("contactpc").style.visibility = "hidden";
+            document.getElementById("teampc").style.height = "0%";
+            document.getElementById("sponsorspc").style.height = "0%";
+            document.getElementById("contactpc").style.height = "0%";
+            document.getElementById("eventpc").style.height = "128%";
+            document.getElementById("Schedule").style.visibility = "hidden";
+            document.getElementById("Notices").style.visibility = "hidden";
+            document.getElementById("side1").style.visibility = "hidden";
+            document.getElementById("side2").style.visibility = "hidden";
+
+        }
+        if (clicked_id == "Home") {
+            document.getElementById("eventpc").style.visibility = "hidden";
+            document.getElementById("wrap").style.visibility = "visible";
+            document.getElementById("teampc").style.visibility = "hidden";
+            document.getElementById("sponsorspc").style.visibility = "hidden";
+            document.getElementById("aboutpc").style.visibility = "hidden";
+            document.getElementById("contactpc").style.visibility = "hidden";
+            document.getElementById("Schedule").style.visibility = "visible";
+            document.getElementById("Notices").style.visibility = "visible";
+            document.getElementById("side1").style.visibility = "visible";
+            document.getElementById("side2").style.visibility = "visible";
+        }
+
+        if (clicked_id == "Team") {
+            document.getElementById("teampc").style.visibility = "visible";
+            document.getElementById("teampc").style.height = "146vw";
+            document.getElementById("eventpc").style.visibility = "hidden";
+            document.getElementById("wrap").style.visibility = "hidden";
+            document.getElementById("sponsorspc").style.visibility = "hidden";
+            document.getElementById("aboutpc").style.visibility = "hidden";
+            document.getElementById("contactpc").style.visibility = "hidden";
+            document.getElementById("Schedule").style.visibility = "hidden";
+            document.getElementById("Notices").style.visibility = "hidden";
+            document.getElementById("side1").style.visibility = "hidden";
+            document.getElementById("side2").style.visibility = "hidden";
+            document.getElementById("sponsorspc").style.height = "0%";
+            document.getElementById("eventpc").style.height = "0%";
+            document.getElementById("contactpc").style.height = "0%";
+            body.style.overflow = "auto";
+        }
+        if (clicked_id == "Sponsors") {
+            document.getElementById("teampc").style.visibility = "hidden";
+            document.getElementById("eventpc").style.visibility = "hidden";
+            document.getElementById("wrap").style.visibility = "hidden";
+            document.getElementById("aboutpc").style.visibility = "hidden";
+            document.getElementById("contactpc").style.visibility = "hidden";
+            document.getElementById("Schedule").style.visibility = "hidden";
+            document.getElementById("Notices").style.visibility = "hidden";
+            document.getElementById("side1").style.visibility = "hidden";
+            document.getElementById("side2").style.visibility = "hidden";
+            document.getElementById("sponsorspc").style.visibility = "visible";
+            document.getElementById("teampc").style.height = "100%";
+            document.getElementById("eventpc").style.height = "100%";
+            document.getElementById("sponsorspc").style.height = "208vw";
+            document.getElementById("contactpc").style.height = "0%";
+
+        }
+        if (clicked_id == "About") {
+            document.getElementById("aboutpc").style.visibility = "visible";
+            document.getElementById("aboutpc").style.height = "115%";
+            document.getElementById("Schedule").style.visibility = "hidden";
+            document.getElementById("Notices").style.visibility = "hidden";
+            document.getElementById("side1").style.visibility = "hidden";
+            document.getElementById("side2").style.visibility = "hidden";
+            document.getElementById("teampc").style.visibility = "hidden";
+            document.getElementById("eventpc").style.visibility = "hidden";
+            document.getElementById("wrap").style.visibility = "hidden";
+            document.getElementById("sponsorspc").style.visibility = "hidden";
+            document.getElementById("contactpc").style.visibility = "hidden";
+
+        }
+
+
+        if (clicked_id == "contact") {
+            document.getElementById("teampc").style.visibility = "hidden";
+            document.getElementById("eventpc").style.visibility = "hidden";
+            document.getElementById("wrap").style.visibility = "hidden";
+            document.getElementById("sponsorspc").style.visibility = "hidden";
+            document.getElementById("aboutpc").style.visibility = "hidden";
+            document.getElementById("contactpc").style.visibility = "visible";
+            document.getElementById("Schedule").style.visibility = "hidden";
+            document.getElementById("Notices").style.visibility = "hidden";
+            document.getElementById("side1").style.visibility = "hidden";
+            document.getElementById("side2").style.visibility = "hidden";
+            document.getElementById("sponsorspc").style.height = "0%";
+            document.getElementById("eventpc").style.height = "0%";
+            document.getElementById("aboutpc").style.height = "0%";
+            document.getElementById("contactpc").style.height = "146vw";
+        }
+    }
+
+
+    function war(clicked_id) {
+        document.getElementById("eventpc").style.visibility = "hidden";
+        document.getElementById("wrap").style.visibility = "visible";
+        document.getElementById("teampc").style.visibility = "hidden";
+        document.getElementById("sponsorspc").style.visibility = "hidden";
+        document.getElementById("aboutpc").style.visibility = "hidden";
+    }
 
     function eyeopen(clicked_id) {
         document.getElementById("eyer").style.left = "57.5vw";
@@ -214,7 +863,162 @@
     }
 </script>
 
+<script>
+    var meanit = "Car";
+    var n = 0;
 
+    const mq = window.matchMedia("(max-width: 700px)");
+
+    if (mq.matches) {
+
+        function round(clicked_id) {
+            document.getElementById(clicked_id).style.borderRadius = "100%";
+            document.getElementById("cf" + clicked_id).style.opacity = "1";
+            document.getElementById("backgrd").style.opacity = "0";
+
+        }
+
+        function flat(clicked_id) {
+            document.getElementById(clicked_id).style.borderRadius = "0%";
+            document.getElementById("cf" + clicked_id).style.opacity = "0";
+            document.getElementById("backgrd").style.opacity = "1";
+        }
+
+        function ope(clicked_id) {
+            meanit = clicked_id;
+            console.log(meanit);
+            document.getElementById("h" + clicked_id).style.left = "1%";
+            document.getElementById("k" + clicked_id).style.left = "0%";
+            document.getElementById("list").style.visibility = "hidden";
+            document.getElementById("forwar").style.visibility = "visible";
+            document.getElementById("backwar").style.visibility = "visible";
+            document.getElementById("pctopbar").style.visibility = "hidden";
+            document.getElementById("Home").style.visibility = "hidden";
+            document.getElementById("Events").style.visibility = "hidden";
+            document.getElementById("Team").style.visibility = "hidden";
+            document.getElementById("About").style.visibility = "hidden";
+            document.getElementById("Sponsors").style.visibility = "hidden";
+            document.getElementById("Contact").style.visibility = "hidden";
+
+        }
+
+        function closeover(clicked_id) {
+            document.getElementById(clicked_id).style.background = "#f00811";
+        }
+
+        function closeout(clicked_id) {
+            document.getElementById(clicked_id).style.background = "#4f8f1c";
+        }
+
+        function closeit(clicked_id) {
+            n = 0;
+            document.getElementById("he" + clicked_id).style.left = "-151%";
+            document.getElementById("ke" + clicked_id).style.left = "149%";
+            document.getElementById("list").style.visibility = "visible";
+            document.getElementById("forwar").style.visibility = "hidden";
+            document.getElementById("backwar").style.visibility = "hidden";
+            document.getElementById("pctopbar").style.visibility = "visible";
+            document.getElementById("Home").style.visibility = "visible";
+            document.getElementById("Events").style.visibility = "visible";
+            document.getElementById("Team").style.visibility = "visible";
+            document.getElementById("Sponsors").style.visibility = "visible";
+            document.getElementById("About").style.visibility = "visible";
+            document.getElementById("Contact").style.visibility = "visible";
+
+        }
+		function opaiChanger(clicked_id) {
+            document.getElementById("forwar").style.opacity = "1";
+            document.getElementById("backwar").style.opacity = "1";
+        }
+
+        function opaoChanger(clicked_id) {
+            document.getElementById("forwar").style.opacity = "0.9";
+            document.getElementById("backwar").style.opacity = "0.9";
+        }
+
+    } else
+
+    {
+        function round(clicked_id) {
+            document.getElementById(clicked_id).style.borderRadius = "100%";
+            document.getElementById("cf" + clicked_id).style.opacity = "1";
+            document.getElementById("backgrd").style.opacity = "0";
+
+        }
+
+        function flat(clicked_id) {
+            document.getElementById(clicked_id).style.borderRadius = "0%";
+            document.getElementById("cf" + clicked_id).style.opacity = "0";
+            document.getElementById("backgrd").style.opacity = "1";
+        }
+
+        function ope(clicked_id) {
+            meanit = clicked_id;
+            console.log(meanit);
+            document.getElementById("h" + clicked_id).style.left = "1%";
+            document.getElementById("k" + clicked_id).style.left = "50%";
+            document.getElementById("list").style.visibility = "hidden";
+            document.getElementById("forwar").style.visibility = "visible";
+            document.getElementById("backwar").style.visibility = "visible";
+            document.getElementById("pctopbar").style.visibility = "hidden";
+            document.getElementById("Home").style.visibility = "hidden";
+            document.getElementById("Events").style.visibility = "hidden";
+            document.getElementById("Team").style.visibility = "hidden";
+            document.getElementById("About").style.visibility = "hidden";
+            document.getElementById("Sponsors").style.visibility = "hidden";
+            document.getElementById("Contact").style.visibility = "hidden";
+
+        }
+
+        function closeover(clicked_id) {
+            document.getElementById(clicked_id).style.background = "#f00811";
+        }
+
+        function closeout(clicked_id) {
+            document.getElementById(clicked_id).style.background = "#4f8f1c";
+        }
+		function opaiChanger(clicked_id) {
+            document.getElementById("forwar").style.opacity = "1";
+            document.getElementById("backwar").style.opacity = "1";
+        }
+
+        function opaoChanger(clicked_id) {
+            document.getElementById("forwar").style.opacity = "0.9";
+            document.getElementById("backwar").style.opacity = "0.9";
+        }
+        function closeit(clicked_id) {
+            document.getElementById("he" + clicked_id).style.left = "-51%";
+            document.getElementById("ke" + clicked_id).style.left = "149%";
+            document.getElementById("list").style.visibility = "visible";
+            document.getElementById("forwar").style.visibility = "hidden";
+            document.getElementById("backwar").style.visibility = "hidden";
+            document.getElementById("pctopbar").style.visibility = "visible";
+            document.getElementById("Home").style.visibility = "visible";
+            document.getElementById("Events").style.visibility = "visible";
+            document.getElementById("Team").style.visibility = "visible";
+            document.getElementById("Sponsors").style.visibility = "visible";
+            document.getElementById("About").style.visibility = "visible";
+            document.getElementById("Contact").style.visibility = "visible";
+            n = 1;
+
+        }
+		
+    }
+</script>
+
+
+
+
+<script>
+    if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+    }
+</script>
+<script>
+    if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+    }
+</script>
 </head>
 
 <body translate="no" style="overflow-x: hidden;">
@@ -223,11 +1027,20 @@
         <img onmouseover="eyeopen()" onmouseout="eyeclose()" src="images/logo.png" id="centrelogo" />
         <img src="images/Eye_Left.png" id="eyel" />
         <img src="images/Eye_Right-min.png" id="eyer" />
+
+
+
+
+
+
+
+
+
         <img class="foot" style="opacity:1;position:absolute;bottom:-1.2vw;left:32vw;width:38vw;height:6vw;" src="images/Footer_middle.png" />
-        <a href="https://instagram.com/fusionitgcet"> <img href="www.google.com" class="icon" style="width:6.2vw;height:3.2vw; opacity:1;position:absolute;bottom:0vw;left:37.5vw;" src="images/11.png" /></a>
-        <a href="https://youtube.com/c/GalgotiasUniversity_1"><img class="icon" style="width:3vw;height:2.3vw;opacity:1;position:absolute;bottom:0.5vw;left:46vw;" src="images/12.png" /></a>
-        <a href="https://twitter.com/Galgotiagcet?t=H_5MSr0nAER_3kkWF_Pzfw&s=09"><img class="icon" style="width:3vw;height:2.3vw;opacity:1;position:absolute;bottom:0.5vw;left:54vw;" src="images/13.png" /></a>
-        <a href="https://www.facebook.com/GalgotiasCollege/"><img class="icon" style="width:3vw;height:2.5vw;opacity:1;position:absolute;bottom:0.7vw;left:59vw;" src="images/3.png" /></a>
+        <a href="https://instagram.com/vspsharmony"> <img href="www.google.com" class="icon" style="width:6.2vw;height:3.2vw; opacity:1;position:absolute;bottom:0vw;left:37.5vw;" src="images/11.png" /></a>
+        <a href="https://youtube.com/vspscantt"><img class="icon" style="width:3vw;height:2.3vw;opacity:1;position:absolute;bottom:0.5vw;left:46vw;" src="images/12.png" /></a>
+        <a href="https://twitter.com/vspsharmony"><img class="icon" style="width:3vw;height:2.3vw;opacity:1;position:absolute;bottom:0.5vw;left:54vw;" src="images/13.png" /></a>
+        <a href="https://facebook.com/vspsharmony"><img class="icon" style="width:3vw;height:2.5vw;opacity:1;position:absolute;bottom:0.7vw;left:59vw;" src="images/3.png" /></a>
     </div>
 
 
@@ -279,8 +1092,7 @@
 
 
 
-
-    <div id="pctopbar">
+<div id="pctopbar">
         <img class="logo" src="images/Header.png" />
         <div class="btn1" id="Home" onclick="colorcchange(this.id)" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:absolute;top:0%;left:3.4%;">
             <p style="position:absolute;top:1%;left:2%;">Home</p>
@@ -312,7 +1124,7 @@
         <img id="side1" style="position:fixed;bottom:0vw;left:0vw; height:5vw;width:20vw;" src="images/LFooter_Side.png" />
         <img id="side2" style="position:fixed;bottom:0vw;right:0vw; height:5vw;width:20vw;" src="images/RFooter_Side.png" />
 
-        <div class="btn1" id="Schedule" onclick="window.open('schedule.pdf')" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:fixed;bottom:1%;left:3.4%;">
+        <div class="btn1" id="Schedule" onclick="window.open('schedule/Schedule.pdf')" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:fixed;bottom:1%;left:3.4%;">
             <p style="position:absolute;top:1%;left:2%;">Schedule</p>
         </div>
 
@@ -321,5 +1133,1378 @@
         </div>
 
     </div>
+
+
+
+    </div>
+
+    <div class="eventpc" id="eventpc">
+
+
+        <div class="list" id="list">
+
+            <div class="bloc" id="event1" style="background:url(icon/face.png);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent1">
+                    <p class="eventname">Face Painting</p>
+                </div>
+            </div>
+
+            <div class="bloc" id="event2" style="background:url(icon/lens.png);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent2">
+                    <p class="eventname">Lens Have</br>Fun</p>
+                </div>
+            </div>
+
+            <div class="bloc" id="event3" style="background:url(icon/perform.jpg);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent3">
+                    <p class="eventname">Happy Feet</p>
+                </div>
+            </div>
+
+            <div class="bloc" id="event4" style="background:url(icon/vlog.png);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent4">
+                    <p class="eventname"> Vlog Making</p>
+                </div>
+            </div>
+
+            <div class="bloc" id="event5" style="background:url(icon/web.png);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent5">
+                    <p class="eventname">Web Inception</p>
+                </div>
+            </div>
+
+            <div class="bloc" id="event6" style="background:url(icon/ink.png);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent6">
+                    <p class="eventname"> Spill The Ink</p>
+                </div>
+            </div>
+
+            <div class="bloc" id="event7" style="background:url(icon/creat.jpg);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent7">
+                    <p class="eventname">Mandala Art</p>
+                </div>
+            </div>
+
+            <div class="bloc" id="event8" style="background:url(icon/ad.png);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent8">
+                    <p class="eventname">Madvert</p>
+                </div>
+            </div>
+			
+			<div class="bloc" id="event9" style="background:url(icon/create.png);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent9">
+                    <p class="eventname">Creative</br>Junkies</p>
+                </div>
+            </div>
+			
+			<div class="bloc" id="event10" style="background:url(icon/script.png);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent10">
+                    <p class="eventname">Token Script</p>
+                </div>
+            </div>
+			
+			<div class="bloc" id="event11" style="background:url(icon/it.png);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent11">
+                    <p class="eventname">  It Quiz</p>
+                </div>
+            </div>
+			
+			<div class="bloc" id="event12" style="background:url(icon/anime.png);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent12">
+                    <p class="eventname">Animattic</p>
+                </div>
+            </div>
+			
+			<div class="bloc" id="event13" style="background:url(icon/code.png);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent13">
+                    <p class="eventname">Codewars</p>
+                </div>
+            </div>
+			
+			<div class="bloc" id="event14" style="background:url(icon/g.png);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent14">
+                    <p class="eventname">Smash Karts</p>
+                </div>
+            </div>
+			
+			<div class="bloc" id="event15" style="background:url(icon/bad.png);no-repeat;background-size:100% 100%;" onmouseover="round(this.id)" onmouseout="flat(this.id)" onclick="ope(this.id)">
+                <div class="cf" id="cfevent15">
+                    <p class="eventname">Badminton</br>Tournament</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="h" id="hevent1">
+                <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/1.jpg" />
+        </div>
+
+
+
+        <div class="k" id="kevent1">
+            <div class="f" style="position:absolute;top:0%;left:0%;">
+                <p class="name" id="name">FACE PAINTING </p>
+                <p class="main" id="main" style="display:block;">
+                    <ul class="main">
+                        <li>A competition to display artistic skills by painting a face depicting the theme given.</li>
+                        <li>The theme shall be given at 11 AM i.e. at the beginning of the event.</li>
+                        <li>Participants will have 3 hours to complete their look and submit their picture.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="close" id="vent1" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="h" id="hevent2">
+            <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/2.jpg" />
+        </div>
+
+
+
+        <div class="k" id="kevent2">
+            <div class="f" style="position:absolute;top:0%;left:0%;">
+                <p class="name" id="name">LENS HAVE FUN </p>
+                    <p class="main" id="main" style="display:block;">
+                        <ul class="main">
+                            <li>The participant shall be given a theme at the beginning of the event.</li>
+                            <li> Participants will get 1 day to click pictures.</li>
+                            <li> All entries will be submitted to the event coordinator on 23rd Feb till 12pm. </li>
+                            <li> The decision of the judge will be final. </li>
+                            <li> All the best!</li>
+                        </ul>
+                    </p>
+			    </p>
+            </div>
+            <div class="close" id="vent2" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="h" id="hevent3">
+                <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/3.jpg" />
+        </div>
+
+
+
+        <div class="k" id="kevent3">
+                <div class="f" style="position:absolute;top:0%;left:0%;">
+                    <p class="name" id="name">HAPPY FEET</p>
+                    <p class="main" id="main" style="display:block;">
+                        <ul class="main">
+                            <li> A competition to display dancing skills by presenting a dance performance. </li>
+                            <li> The competition will take place in E block arena on day 1, 3 pm onwards. </li>
+                            <li> Energy & Patience Makes The Mare Go .</li>
+                            <li> Participants will have to perform for minimum 2 minutes and should not exceed 4 mins.</li>
+                        </ul>
+                    </p>
+                </div>
+            <div class="close" id="vent3" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="h" id="hevent4">
+            <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/4.jpg" />
+        </div>
+
+
+
+        <div class="k" id="kevent4">
+		<div class="f" style="position:absolute;top:0%;left:0%;">
+                    <p class="name" id="name">VLOG MAKING</p>
+                    <p class="main" id="main" style="display:block;">
+                        <ul class="main">
+                            <li> The participant has to make a mini vlog. </li>
+                            <li> The duration of the vlog should not exceed 2 minutes.</li>
+                            <li> Topic of the vlog shall be provided at 3:00pm. </li>
+                            <li> All entries shall be submitted on 23rd Feb till 12pm to the coordinator. </li>
+                        </ul>
+                    </p>
+                </div>
+            <div class="close" id="vent4" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="h" id="hevent5">
+            <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/5.jpg" />
+        </div>
+
+
+
+        <div class="k" id="kevent5">
+		<div class="f" style="position:absolute;top:0%;left:0%;">
+                    <p class="name" id="name">WEB INCEPTION</p>
+                    <p class="main" id="main" style="display:block;">
+                        <ul class="main">
+                            <li> An event to design a Website. </li>
+                            <li> The topic for the website will be given on day 1 of the fest at 3:00pm.</li>
+                            <li> Participants will get 2 days to code. </li>
+                            <li>At 12pm (24 Feb) the link for the website should be submitted to the student in-charge.</li>
+                        </ul>
+                    </p>
+                </div>
+            <div class="close" id="vent5" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+
+
+
+
+
+         <div class="h" id="hevent6">
+                <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/6.jpg" />
+        </div>
+
+
+
+        <div class="k" id="kevent6">
+                <div class="f" style="position:absolute;top:0%;left:0%;">
+                    <p class="name" id="name">SPILL THE INK</p>
+                    <p class="main" id="main" style="display:block;">
+                        <ul class="main">
+                            <li> Participants will be given a topic at the beginning of the competition. </li>
+                            <li> A story has to be written based on the given topic.</li>
+                            <li> The story should be about 300-500 words.</li>
+                            <li> At 12pm, stories have to be submitted.</li>
+                        </ul>
+                    </p>
+                </div>
+            <div class="close" id="vent6" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="h" id="hevent7">
+            <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/7.jpg" />
+        </div>
+
+
+
+        <div class="k" id="kevent7">
+                <div class="f" style="position:absolute;top:0%;left:0%;">
+                    <p class="name" id="name">MANDALA ART</p>
+                    <p class="main" id="main" style="display:block;">
+                        <ul class="main">
+                            <li>A competition to display artistic skills by sketching mandala art. </li>
+                            <li>The entries will be submitted through google forms.</li>
+                            <li> Form will be provided at 10:30 AM on the day of,the event.</li>
+                        </ul>
+                    </p>
+                </div>
+				
+            <div class="close" id="vent7" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+		
+		
+		<div class="h" id="hevent8">
+                <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/8.jpg" />
+        </div>
+        <div class="k" id="kevent8">
+                <div class="f" style="position:absolute;top:0%;left:0%;">
+                    <p class="name" id="name">MADVERT</p>
+                    <p class="main" id="main" style="display:block;">
+                        <ul class="main">
+                            <li>The participant shall be given a product at the beginning of the fest.</li>
+                            <li>The participant has to create a brand name along with a tagline for the product.</li>
+                            <li> An advertisement of 120 seconds has to be submitted at the end of the competition.</li>
+                        </ul>
+                    </p>
+                </div>
+            <div class="close" id="vent8" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+		
+		<div class="h" id="hevent9">
+                <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/9.jpg" />
+        </div>
+        <div class="k" id="kevent9">
+                <div class="f" style="position:absolute;top:0%;left:0%;">
+                    <p class="name" id="name">CREATIVE JUNKIES</p>
+                    <p class="main" id="main" style="display:block;">
+                        <ul class="main">
+                            <li>An event to display creative skills.</li>
+                            <li>there will be two rounds and participants have to design a marketing poster for automobile company and design a coffee mug and paste it on a mockup.</li>
+                            <li> Participants will get two hours for this.</li>
+                        </ul>
+                    </p>
+                </div>
+            <div class="close" id="vent9" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+		
+		<div class="h" id="hevent10">
+                <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/10.jpg" />
+        </div>
+        <div class="k" id="kevent10">
+                <div class="f" style="position:absolute;top:0%;left:0%;">
+                    <p class="name" id="name">TOKEN SCRIPT</p>
+                    <p class="main" id="main" style="display:block;">
+                        <ul class="main">
+                            <li>Participants will be given a word /phrase during the opening ceremony.</li>
+                            <li>A poem has to be presented based on what he/she has inferred from the given word/phrase.</li>
+                            <li>The poem should not exceed two minutes.</li>
+                        </ul>
+                    </p>
+                </div>
+            <div class="close" id="vent10" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+		
+		<div class="h" id="hevent11">
+                <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/11.jpg" />
+        </div>
+        <div class="k" id="kevent11">
+                <div class="f" style="position:absolute;top:0%;left:0%;">
+                    <p class="name" id="name">IT QUIZ</p>
+                    <p class="main" id="main" style="display:block;">
+                        <ul class="main">
+                            <li>This will be a quiz based on recent advancements in tech.</li>
+                            <li>Quiz will take place in E-110 at 2:00pm.</li>
+                            <li>Participants can participate in pairs or solo.</li>
+							<li>Maximum correct answers will be declared the winner(s).</li>
+                        </ul>
+                    </p>
+                </div>
+            <div class="close" id="vent11" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+		
+		<div class="h" id="hevent12">
+                <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/12.jpg" />
+        </div>
+        <div class="k" id="kevent12">
+                <div class="f" style="position:absolute;top:0%;left:0%;">
+                    <p class="name" id="name">ANIMATIC</p>
+                    <p class="main" id="main" style="display:block;">
+                        <ul class="main">
+                            <li>This will be a quiz based on anime, music and other ott series.</li>
+                            <li>The quiz will take place in E-111.</li>
+                            <li>Participants can participate in pairs or solo.</li>
+							<li>Maximum correct answers will be declared the winner(s).</li>
+                        </ul>
+                    </p>
+                </div>
+            <div class="close" id="vent12" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+		
+		<div class="h" id="hevent13">
+                <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/13.jpg" />
+        </div>
+        <div class="k" id="kevent13">
+                <div class="f" style="position:absolute;top:0%;left:0%;">
+                    <p class="name" id="name">CODEWARS</p>
+                    <p class="main" id="main" style="display:block;">
+                        <ul class="main">
+                            <li>This is a coding competition that will take place on hackerearth.</li>
+                            <li>The event comprises of 4 coding question: 2 easy, 1 medium and 1 hard.</li>
+                            <li>Participant with maximum test cases passed shall be the winner.</li>
+                        </ul>
+                    </p>
+                </div>
+            <div class="close" id="vent13" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+		
+		<div class="h" id="hevent14">
+                <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/14.jpg" />
+        </div>
+        <div class="k" id="kevent14">
+                <div class="f" style="position:absolute;top:0%;left:0%;">
+                    <p class="name" id="name">SMASH KARTS</p>
+                    <p class="main" id="main" style="display:block;">
+                        <ul class="main">
+                            <li>The game will be played on https://smashkarts.io/ .</li>
+                            <li>The last remaining participant shall be declared as the winner.</li>
+                        </ul>
+                    </p>
+                </div>
+            <div class="close" id="vent14" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+		
+		<div class="h" id="hevent15">
+                <img class="photos" style="position:absolute;top:0%;left:0%;" src="icon/15.jpg" />
+        </div>
+        <div class="k" id="kevent15">
+                <div class="f" style="position:absolute;top:0%;left:0%;">
+                    <p class="name" id="name">BADMINTON TOURNAMENT</p>
+                    <p class="main" id="main" style="display:block;">
+                        <ul class="main">
+                            <li></li>
+                            <li>The first round will be played on 22nd February.</li>
+                            <li>All those who qualify the first round will play the semi final and final on 23rd February.</li>
+							<li>Only top 16 registrations accepted.</li>
+                        </ul>
+                    </p>
+                </div>
+            <div class="close" id="vent15" onmouseover="closeover(this.id)" onmouseout="closeout(this.id)" onclick="closeit(this.id)">
+                <p style="position:absolute;top:-15%;left:30%;font-family:Roboto;font-size:1.5vw;">CLOSE</p>
+            </div>
+        </div>
+		
+	</div>
+
+
+
+
+
+
+
+    <div class="teampc" id="teampc" style="width:100vw;">
+
+
+        <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+        <canvas id='world' style="position:aboslute;top:19vw;width:100vw;height:42vw;">
+</canvas>
+
+      <script>
+            var TWO_PI = Math.PI * 2;
+            var HALF_PI = Math.PI * 0.5;
+            var THICKNESS = 12;
+            var LENGTH = 10;
+            var STEP = 0.1;
+            var FPS = 1000 / 60;
+
+            function Particle(x, y, mass) {
+
+                this.x = x || 0;
+                this.y = y || 0;
+                this.ox = this.x;
+                this.oy = this.y;
+                this.mass = mass || 1.0;
+                this.massInv = 1.0 / this.mass;
+                this.fixed = false;
+
+                this.update = function(dt) {
+                    if (!this.fixed) {
+                        var fx = 0.0000;
+                        var fy = 0.0000;
+                        var tx = this.x,
+                            ty = this.y;
+
+                        this.x += (this.x - this.ox) + fx * this.massInv * dt * dt;
+                        this.y += (this.y - this.oy) + fy * this.massInv * dt * dt;
+                        this.ox = tx;
+                        this.oy = ty;
+                    }
+                };
+            };
+function backwar(clicked_id) {
+            console.log(meanit);
+            var kel3 = meanit + "slideshow";
+            var kel4 = meanit + "slide";
+            var x = 0;
+            if (n == 0) {
+                n = 0
+            } else {
+                n--;
+            }
+            var y = -(n * 100);
+            var z = (x + y);
+            document.getElementById(kel3).style.left = z + "%";
+            document.getElementById(kel4).style.left = z + "%";
+        }
+            function Spring(p1, p2, restLength, strength) {
+
+                this.p1 = p1;
+                this.p2 = p2;
+                this.restLength = restLength || 10;
+                this.strength = strength || 1.0;
+
+                this.update = function(dt) {
+
+                    // Compute desired force
+                    var dx = p2.x - p1.x,
+                        dy = p2.y - p1.y,
+                        dd = Math.sqrt(dx * dx + dy * dy) + 0.0001,
+                        tf = (dd - this.restLength) / (dd * (p1.massInv + p2.massInv)) * this.strength,
+                        f;
+
+                    // Apply forces
+                    if (!p1.fixed) {
+                        f = tf * p1.massInv;
+                        p1.x += dx * f;
+                        p1.y += dy * f;
+                    }
+
+                    if (!p2.fixed) {
+                        f = -tf * p2.massInv;
+                        p2.x += dx * f;
+                        p2.y += dy * f;
+                    }
+                }
+            };
+
+            function Sim() {
+
+                this.particles = [];
+                this.springs = [];
+
+                this.tick = function(dt) {
+
+                    var i, n;
+
+                    for (i = 0, n = this.springs.length; i < n; ++i) {
+                        this.springs[i].update(dt);
+                    }
+
+                    for (i = 0, n = this.particles.length; i < n; ++i) {
+                        this.particles[i].update(dt);
+                    }
+                }
+            };
+
+            var sim = new Sim(),
+                old = new Date().getTime(),
+                canvas = document.getElementById('world'),
+                context = canvas.getContext('2d');
+
+            function init() {
+
+                var np,
+                    op,
+                    mouse,
+                    anchor,
+                    step = STEP,
+                    length = LENGTH,
+                    count = length / step;
+
+                var sx = canvas.width * 0.5;
+                var sy = canvas.height * 0.5;
+
+                for (var i = 0; i < count; ++i) {
+
+                    //np = new Particle(i*8,i*8,0.1+Math.random()*0.01);
+                    np = new Particle(sx + (Math.random() - 0.5) * 200, sy + (Math.random() - 0.5) * 200, 0.1 + Math.random() * 0.01);
+                    sim.particles.push(np);
+
+                    if (i > 0) {
+                        s = new Spring(np, op, step, 0.95);
+                        sim.springs.push(s);
+                    }
+
+                    op = np;
+                }
+
+                // Fix the first particle
+                anchor = sim.particles[0];
+                //anchor.fixed = true;
+                anchor.x = 50;
+                anchor.y = 50;
+
+                // Move last particle with mouse
+                mouse = sim.particles[count - 1];
+                mouse.fixed = true;
+
+                canvas.addEventListener('mousemove', function(event) {
+                    mouse.x = event.clientX;
+                    mouse.y = event.clientY;
+                });
+            };
+
+            function step() {
+
+                var now = new Date().getTime(),
+                    delta = now - old;
+
+                sim.tick(delta);
+
+                // Clear canvas
+                canvas.width = canvas.width;
+
+                var points = []; // Midpoints
+                var angles = []; // Delta angles
+
+                var i, n, p1, p2, dx, dy, mx, my, sin, cos, theta;
+
+                // Compute midpoints and angles
+                for (i = 0, n = sim.particles.length - 1; i < n; ++i) {
+
+                    p1 = sim.particles[i];
+                    p2 = sim.particles[i + 1];
+
+                    dx = p2.x - p1.x;
+                    dy = p2.y - p1.y;
+
+                    mx = p1.x + dx * 0.5;
+                    my = p1.y + dy * 0.5;
+
+                    points[i] = {
+                        x: mx,
+                        y: my
+                    };
+                    angles[i] = Math.atan2(dy, dx);
+                }
+
+                // Render
+                context.beginPath();
+
+                for (i = 0, n = points.length; i < n; ++i) {
+
+                    p1 = sim.particles[i];
+                    p2 = points[i];
+
+                    theta = angles[i];
+
+                    r = Math.sin((i / n) * Math.PI) * THICKNESS;
+                    sin = Math.sin(theta - HALF_PI) * r;
+                    cos = Math.cos(theta - HALF_PI) * r;
+
+                    context.quadraticCurveTo(
+                        p1.x + cos,
+                        p1.y + sin,
+                        p2.x + cos,
+                        p2.y + sin);
+                }
+
+                for (i = points.length - 1; i >= 0; --i) {
+
+                    p1 = sim.particles[i + 1];
+                    p2 = points[i];
+
+                    theta = angles[i];
+
+                    r = Math.sin((i / n) * Math.PI) * THICKNESS;
+                    sin = Math.sin(theta + HALF_PI) * r;
+                    cos = Math.cos(theta + HALF_PI) * r;
+
+                    context.quadraticCurveTo(
+                        p1.x + cos,
+                        p1.y + sin,
+                        p2.x + cos,
+                        p2.y + sin);
+
+                }
+
+                context.strokeStyle = 'rgba(255,255,255,0.1)';
+                context.lineWidth = 8;
+                context.stroke();
+
+                context.strokeStyle = 'rgba(0,0,0,0.8)';
+                context.lineWidth = 0.5;
+                context.stroke();
+
+                context.fillStyle = 'rgba(255,255,255,0.9)';
+                context.fill();
+
+                old = now;
+
+                setTimeout(step, FPS);
+            };
+
+            function resize() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+
+            window.addEventListener("resize", resize);
+            resize();
+
+            init();
+            step();
+        </script>
+
+
+        <style>
+            .teammember {
+                height: 22vw;
+                width: 20vw;
+                background: #faf5f5;
+                z-index: 71;
+                overflow: hidden;
+            }
+            
+            .teammouseover {
+                height: 22vw;
+                width: 20vw;
+                opacity: 0.7;
+                background: #fe7c00;
+                position: absolute;
+                top: -100%;
+                left: 0%;
+                z-index: 72;
+                -webkit-transition: all ease-out 0.5s;
+                -moz-transition: all ease-out 0.5s;
+                -o-transition: all ease-out 0.5s;
+                -ms-transition: all ease-out 0.5s;
+                transition: all ease-out 0.5s;
+            }
+            
+            .teamheading {
+                color: #ffffff;
+                font-size: 3vw;
+                font-family: Aclonica;
+            }
+            
+            .teamname {
+                color: #ffffff;
+                font-size: 3vw;
+                font-family: Aladin;
+            }
+        </style>
+
+
+        <script>
+            function teamon(clicked_id) {
+                document.getElementById(clicked_id + "mouseover").style.top = "0%";
+            }
+
+            function teamoff(clicked_id) {
+                document.getElementById(clicked_id + "mouseover").style.top = "-100%";
+            }
+        </script>
+
+        <div class="teamheading" style="position:absolute;top:12vw;left:37vw;">FESTIVAL HEADS</div>
+
+        <div class="teammember" id="teammember1" style="position:absolute;top:20vw;left:24vw; background:url(images/ragu.png);no-repeat;background-size:100% 100%;" onmouseover="teamon(this.id)" onmouseout="teamoff(this.id)" onclick="teamon(this.id)">
+            <div class="teammouseover" id="teammember1mouseover">
+                <p class="teamname" style="position:absolute;top:25%;left:14%;">NAME</p>
+            </div>
+        </div>
+
+        <div class="teammember" id="teammember2" style="position:absolute;top:20vw;left:56vw;background:url(images/ragu.png);no-repeat;background-size:100% 100%;" onmouseover="teamon(this.id)" onmouseout="teamoff(this.id)" onclick="teamon(this.id)">
+            <div class="teammouseover" id="teammember2mouseover">
+                <p class="teamname" style="position:absolute;top:25%;left:18%;">NAME</p>
+            </div>
+        </div>
+
+        <div class="teamheading" style="position:absolute;top:48vw;left:32vw;">EVENT COORDINATORS</div>
+
+        <div class="teammember" id="teammember3" style="position:absolute;top:56vw;left:6vw;background:url(images/ragu.png);no-repeat;background-size:100% 100%;" onmouseover="teamon(this.id)" onmouseout="teamoff(this.id)" onclick="teamon(this.id)">
+            <div class="teammouseover" id="teammember3mouseover">
+                <p class="teamname" style="position:absolute;top:25%;left:18%;">NAME</p>
+            </div>
+        </div>
+
+        <div class="teammember" id="teammember4" style="position:absolute;top:56vw;left:28vw;background:url(images/ragu.png);no-repeat;background-size:100% 100%;" onmouseover="teamon(this.id)" onmouseout="teamoff(this.id)" onclick="teamon(this.id)">
+            <div class="teammouseover" id="teammember4mouseover">
+                <p class="teamname" style="position:absolute;top:25%;left:18%;">NAME</p>
+            </div>
+        </div>
+
+        <div class="teammember" id="teammember5" style="position:absolute;top:56vw;left:50vw;background:url(images/ragu.png);no-repeat;background-size:100% 100%;" onmouseover="teamon(this.id)" onmouseout="teamoff(this.id)" onclick="teamon(this.id)">
+            <div class="teammouseover" id="teammember5mouseover">
+                <p class="teamname" style="position:absolute;top:25%;left:18%;">NAME</p>
+            </div>
+        </div>
+
+        <div class="teammember" id="teammember6" style="position:absolute;top:56vw;left:72vw;background:url(images/ragu.png);no-repeat;background-size:100% 100%;" onmouseover="teamon(this.id)" onmouseout="teamoff(this.id)" onclick="teamon(this.id)">
+            <div class="teammouseover" id="teammember6mouseover">
+                <p class="teamname" style="position:absolute;top:25%;left:18%;">NAME</p>
+            </div>
+        </div>
+
+
+
+        <div class="teamheading" style="position:absolute;top:84vw;left:36vw;">CATEGORY HEADS</div>
+
+        <div class="teammember" id="teammember7" style="position:absolute;top:92vw;left:6vw;background:url(images/ragu.png);no-repeat;background-size:100% 100%;" onmouseover="teamon(this.id)" onmouseout="teamoff(this.id)" onclick="teamon(this.id)">
+            <div class="teammouseover" id="teammember7mouseover">
+                <p class="teamname" style="position:absolute;top:25%;left:18%;">NAME</p>
+            </div>
+        </div>
+
+        <div class="teammember" id="teammember8" style="position:absolute;top:92vw;left:28vw;background:url(images/ragu.png);no-repeat;background-size:100% 100%;" onmouseover="teamon(this.id)" onmouseout="teamoff(this.id)" onclick="teamon(this.id)">
+            <div class="teammouseover" id="teammember8mouseover">
+                <p class="teamname" style="position:absolute;top:25%;left:18%;">NAME</p>
+            </div>
+        </div>
+
+        <div class="teammember" id="teammember9" style="position:absolute;top:92vw;left:50vw;background:url(images/ragu.png);no-repeat;background-size:100% 100%;" onmouseover="teamon(this.id)" onmouseout="teamoff(this.id)" onclick="teamon(this.id)">
+            <div class="teammouseover" id="teammember9mouseover">
+                <p class="teamname" style="position:absolute;top:25%;left:18%;">NAME</p>
+            </div>
+        </div>
+
+        <div class="teammember" id="teammember10" style="position:absolute;top:92vw;left:72vw;background:url(images/ragu.png);no-repeat;background-size:100% 100%;" onmouseover="teamon(this.id)" onmouseout="teamoff(this.id)" onclick="teamon(this.id)">
+            <div class="teammouseover" id="teammember10mouseover">
+                <p class="teamname" style="position:absolute;top:25%;left:18%;">NAME</p>
+            </div>
+        </div>
+
+        <div class="teammember" id="teammember11" style="position:absolute;top:116vw;left:6vw;background:url(images/ragu.png);no-repeat;background-size:100% 100%;" onmouseover="teamon(this.id)" onmouseout="teamoff(this.id)" onclick="teamon(this.id)">
+            <div class="teammouseover" id="teammember11mouseover">
+                <p class="teamname" style="position:absolute;top:25%;left:18%;">NAME</p>
+            </div>
+        </div>
+
+        <div class="teammember" id="teammember12" style="position:absolute;top:116vw;left:28vw;background:url(images/ragu.png);no-repeat;background-size:100% 100%;" onmouseover="teamon(this.id)" onmouseout="teamoff(this.id)" onclick="teamon(this.id)">
+            <div class="teammouseover" id="teammember12mouseover">
+                <p class="teamname" style="position:absolute;top:25%;left:18%;">NAME</p>
+            </div>
+        </div>
+
+        <div class="teammember" id="teammember13" style="position:absolute;top:116vw;left:50vw;background:url(images/ragu.png);no-repeat;background-size:100% 100%;" onmouseover="teamon(this.id)" onmouseout="teamoff(this.id)" onclick="teamon(this.id)">
+            <div class="teammouseover" id="teammember13mouseover">
+                <p class="teamname" style="position:absolute;top:25%;left:18%;">NAME</p>
+            </div>
+        </div>
+
+        <div class="teammember" id="teammember14" style="position:absolute;top:116vw;left:72vw;background:url(images/ragu.png);no-repeat;background-size:100% 100%;" onmouseover="teamon(this.id)" onmouseout="teamoff(this.id)" onclick="teamon(this.id)">
+            <div class="teammouseover" id="teammember14mouseover">
+                <p class="teamname" style="position:absolute;top:25%;left:18%;">NAME</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const cq = window.matchMedia("(max-width: 700px)");
+        function openthisbar(clicked_id) {
+
+
+            if (cq.matches) {
+
+                if (clicked_id == "aboutaagaaz") {
+                    document.getElementById(clicked_id).style.height = "65vw";
+                    document.getElementById("overviewaagaaz").style.height = "3vw";
+                    document.getElementById("fromprincipledeskaagaaz").style.height = "3vw";
+                }
+                if (clicked_id == "overviewaagaaz") {
+                    document.getElementById(clicked_id).style.height = "65vw";
+                    document.getElementById("aboutaagaaz").style.height = "3vw";
+                    document.getElementById("fromprincipledeskaagaaz").style.height = "3vw";
+                }
+                if (clicked_id == "fromprincipledeskaagaaz") {
+                    document.getElementById(clicked_id).style.height = "65vw";
+                    document.getElementById("aboutaagaaz").style.height = "3vw";
+                    document.getElementById("overviewaagaaz").style.height = "3vw";
+                }
+            } else
+
+            {
+                if (clicked_id == "aboutaagaaz") {
+                    document.getElementById(clicked_id).style.height = "25vw";
+                    document.getElementById("overviewaagaaz").style.height = "3vw";
+                    document.getElementById("fromprincipledeskaagaaz").style.height = "3vw";
+                }
+                if (clicked_id == "overviewaagaaz") {
+                    document.getElementById(clicked_id).style.height = "25vw";
+                    document.getElementById("aboutaagaaz").style.height = "3vw";
+                    document.getElementById("fromprincipledeskaagaaz").style.height = "3vw";
+                }
+                if (clicked_id == "fromprincipledeskaagaaz") {
+                    document.getElementById(clicked_id).style.height = "25vw";
+                    document.getElementById("aboutaagaaz").style.height = "3vw";
+                    document.getElementById("overviewaagaaz").style.height = "3vw";
+                }
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <div class="sponsorspc" id="sponsorspc">
+
+
+
+        <style>
+            .sponheading {
+                color: #000000;
+                font-size: 3vw;
+                font-family: Aclonica;
+            }
+            
+            .sponsorsblock {
+                width: 14vw;
+                height: 12vw;
+                background-color: #fce8da;
+            }
+            
+            .sponsorstext {
+                color: #000000;
+                font-size: 2vw;
+                font-family: Aladin;
+            }
+        </style>
+
+        <div class="sponheading" style="position:absolute;top:8vw;left:37vw;">OUR SPONSORS</div>
+
+
+        <div class="sponsorstext" style="position:absolute;top:27vw;left:43.8vw;">Hospitality Partner</div>
+        <div class="sponsorsblock" style="position:absolute;top:14vw;left:43vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+
+        <div class="sponsorstext" style="position:absolute;top:47vw;left:44vw;">Fooding Partner</div>
+        <div class="sponsorsblock" style="position:absolute;top:34vw;left:43vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+
+        <div class="sponsorstext" style="position:absolute;top:67vw;left:44vw;">Happiness Partner</div>
+        <div class="sponsorsblock" style="position:absolute;top:54vw;left:43vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+
+        <div class="sponheading" style="position:absolute;top:72vw;left:36vw;">OTHER SPONSORS</div>
+        <div class="sponsorsblock" style="position:absolute;top:78vw;left:34vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:78vw;left:52vw;"><img style="width:100%;height:100%;" src="images/spon.png"> </div>
+
+        <div class="sponsorsblock" style="position:absolute;top:93vw;left:26vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:93vw;left:42vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:93vw;left:58vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+
+
+        <div class="sponsorsblock" style="position:absolute;top:108vw;left:26vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:108vw;left:42vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:108vw;left:58vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+
+        <div class="sponsorsblock" style="position:absolute;top:123vw;left:20vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:123vw;left:35vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:123vw;left:50vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:123vw;left:65vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+
+        <div class="sponsorsblock" style="position:absolute;top:138vw;left:10vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:138vw;left:26vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:138vw;left:42vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:138vw;left:58vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:136vw;left:74vw;"><img style="width:150%;height:150%;" src="images/spon.png"></div>
+
+
+        <div class="sponsorsblock" style="position:absolute;top:153vw;left:10vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:153vw;left:26vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:153vw;left:42vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:153vw;left:58vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:153vw;left:74vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+
+        <div class="sponsorsblock" style="position:absolute;top:168vw;left:10vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:168vw;left:26vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:168vw;left:42vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:168vw;left:58vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:168vw;left:74vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+
+        <div class="sponsorsblock" style="position:absolute;top:183vw;left:10vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:183vw;left:26vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:183vw;left:42vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:183vw;left:58vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+        <div class="sponsorsblock" style="position:absolute;top:183vw;left:74vw;"><img style="width:100%;height:100%;" src="images/spon.png"></div>
+
+
+        <img style="position:absolute;top:198vw;left:38vw;width:22vw;height:5vw;" src="images/spon.png">
+    </div>
+
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <style>
+        .aboutside {
+            width: 20%;
+            height: 120%;
+            position: absolute;
+            background-color: #000000;
+            top: 0vw;
+            left: 0vw;
+            z-index: 105;
+            overflow: hidden;
+            -webkit-transition: all ease-out 0.001s;
+            -moz-transition: all ease-out 0.001s;
+            -o-transition: all ease-out 0.001s;
+            -ms-transition: all ease-out 0.001s;
+            ;
+            transition: all ease-out 0.001s;
+        }
+        
+        .abouttext {
+            color: #ffffff;
+            font-size: 2.4vw;
+            font-family: 'Allerta Stencil';
+            position: absolute;
+            font-family: 'Allerta Stencil';
+            left: 6vw;
+            z-index: 15;
+        }
+        
+        .aboutdate {
+            color: #ffffff;
+            font-size: 1.2vw;
+            font-family: 'Allerta Stencil';
+            position: absolute;
+            top: 5vw;
+            left: 3.5vw;
+            z-index: 15;
+        }
+        
+        .logoabout {
+            width: 17vw;
+            height: 36vw;
+            position: absolute;
+            background-color: #000000;
+            top: 10vw;
+            left: 0vw;
+            z-index: 10;
+        }
+        
+        .mainheading {
+            color: #ffffff;
+            font-size: 2vw;
+            letter-spacing: 5px;
+            position: absolute;
+            font-color: #ffffff;
+            font-family: Roboto;
+            top: 4vw;
+            left: 28vw;
+        }
+        
+        .aboutopt {
+            width: 65vw;
+            left: 28vw;
+            background-color: #FF6633;
+            -webkit-transition: all ease 0.5s;
+            -moz-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+            -ms-transition: all ease 0.5s;
+            transition: all ease 0.5s;
+            overflow: hidden;
+        }
+        
+        #aboutaagaaz {
+            height: 25vw;
+            position: relative;
+            top: 8vw;
+        }
+        
+        #fromprincipledeskaagaaz {
+            height: 3vw;
+            position: relative;
+            top: 10vw;
+        }
+        
+        #overviewaagaaz {
+            height: 3vw;
+            position: relative;
+            top: 12vw;
+        }
+        
+        .abouttopbar {
+            width: 100%;
+            height: 3vw;
+            position: absolute;
+            top: 0vw;
+            left: 0vw;
+            background-color: #000000;
+        }
+        
+        .aboutcontentbar {
+            width: 100%;
+            height: 23vw;
+            position: absolute;
+            top: 3vw;
+            left: 0vw;
+            font-size: 1vw;
+            font-family: 'roboto';
+            background-color: #ffffff;
+            color: #2d2e30;
+            overflow: auto;
+        }
+        
+        .abouttopheading {
+            color: #ffffff;
+            font-size: 1.5vw;
+            position: relative;
+            font-color: #ffffff;
+            font-family: 'Roboto';
+            top: 0.5vw;
+            left: 2vw;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .aboutside {
+                width: 25%;
+                height: 120%;
+                position: absolute;
+                background-color: #000000;
+                top: 0vw;
+                left: 0vw;
+                z-index: 105;
+                overflow: hidden;
+                -webkit-transition: all ease-out 0.001s;
+                -moz-transition: all ease-out 0.001s;
+                -o-transition: all ease-out 0.001s;
+                -ms-transition: all ease-out 0.001s;
+                ;
+                transition: all ease-out 0.001s;
+            }
+            .abouttext {
+                color: #ffffff;
+                font-size: 4.4vw;
+                font-family: 'Allerta Stencil';
+                position: absolute;
+                font-family: 'Allerta Stencil';
+                left: 2.5vw;
+                z-index: 15;
+            }
+            .aboutdate {
+                color: #ffffff;
+                font-size: 1.5vw;
+                font-family: 'Allerta Stencil';
+                position: absolute;
+                top: 8.8vw;
+                left: 2.8vw;
+                z-index: 15;
+            }
+            .logoabout {
+                width: 24vw;
+                height: 52vw;
+                position: absolute;
+                background-color: #000000;
+                top: 24vw;
+                left: 0vw;
+                z-index: 10;
+            }
+            .mainheading {
+                color: #ffffff;
+                font-size: 2vw;
+                letter-spacing: 5px;
+                position: absolute;
+                font-color: #ffffff;
+                font-family: Roboto;
+                top: 4vw;
+                left: 28vw;
+            }
+            .aboutopt {
+                width: 65vw;
+                left: 28vw;
+                background-color: #FF6633;
+                -webkit-transition: all ease 0.5s;
+                -moz-transition: all ease 0.5s;
+                -o-transition: all ease 0.5s;
+                -ms-transition: all ease 0.5s;
+                transition: all ease 0.5s;
+                overflow: hidden;
+            }
+            #aboutaagaaz {
+                height: 65vw;
+                position: relative;
+                top: 8vw;
+            }
+            #fromprincipledeskaagaaz {
+                height: 3vw;
+                position: relative;
+                top: 10vw;
+            }
+            #overviewaagaaz {
+                height: 3vw;
+                position: relative;
+                top: 12vw;
+            }
+            .abouttopbar {
+                width: 100%;
+                height: 5vw;
+                position: absolute;
+                top: 0vw;
+                left: 0vw;
+                background-color: #000000;
+            }
+            .aboutcontentbar {
+                width: 100%;
+                height: 63vw;
+                position: absolute;
+                top: 3vw;
+                left: 0vw;
+                font-size: 2.8vw;
+                font-family: 'roboto';
+                background-color: #ffffff;
+                color: #2d2e30;
+                overflow: auto;
+            }
+            .abouttopheading {
+                color: #ffffff;
+                font-size: 1.5vw;
+                position: relative;
+                font-color: #ffffff;
+                font-family: 'Roboto';
+                top: 0.5vw;
+                left: 2vw;
+            }
+        }
+    </style>
+
+    <div class="aboutpc" id="aboutpc">
+
+
+
+        <div class="aboutside" id="aboutside">
+            <p class="abouttext" onclick="war()">Aagaaz</p>
+            <p class="aboutdate">22th-24th Feburary,2022</p>
+            <img class="logoabout" src="images/side.png" />
+        </div>
+
+
+
+        <div class="mainheading">ABOUT AAGAAZ,GCET</div>
+
+        <div class="aboutopt" id="aboutaagaaz" onclick="openthisbar(this.id)">
+            <div class="abouttopbar">
+                <div class="abouttopheading">AN OVERVIEW</div>
+            </div>
+            <div class="aboutcontentbar">
+
+                <ul>Aagaaz'22 is a three day long event consisting of 18 competitions in various co-curricular activities.Commencing in IT Department,GCET in 2021; this is the second iteration of the event which is an opportunity to bring young people together in a controlled environment to compete against each other and to 
+				recognize each other's talents.The competitions are broadly cultural, technical, creative, photography, marketing and gaming oriented. </ul>
+
+
+                <ul>Galgotias College of Engineering and Technology is yet again all set to celebrate its annual techno-cultural, arts and literary festival "Aagaaz". "Aagaaz" provides an opportunity to all the students to display their talents in various fields.
+                    The key objectives of such events is to unravel the hidden skills in each youngsters thereby boosting their self-confidence and self belief.</ul>
+
+            </div>
+        </div>
+
+        <div class="aboutopt" id="fromprincipledeskaagaaz" onclick="openthisbar(this.id)">
+            <div class="abouttopbar">
+                <div class="abouttopheading">GENERAL RULES AND REGULATIONS</div>
+            </div>
+            <div class="aboutcontentbar">
+                <ul>All participants must ensure that they have registered for their respective event.</ul>
+                <ul>Participants should be present during the opening ceremony as a walkthrough of the events will be provided.</ul>
+                <ul>The decision of the judges shall be final and binding.</ul>
+				<ul>Use of unfair means shall lead to immediate disqualification of the participant(s).</ul>
+				<ul>Participants are expected to be respectful towards everyone. Any misbehaviour shall lead to disqualification.</ul>
+				<ul>It is mandatory for all participants to be present for the Closing Ceremony, failing which they shall not receive their participation/ merit certificates</ul>
+            </div>
+        </div>
+
+
+        <div class="aboutopt" id="overviewaagaaz" onclick="openthisbar(this.id)">
+            <div class="abouttopbar">
+                <div class="abouttopheading">HISTORY</div>
+            </div>
+            <div class="aboutcontentbar">
+                <ul>  </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="contactpc" id="contactpc">
+        <style>
+            .itteammember {
+                height: 22vw;
+                width: 20vw;
+                background: #faf5f5;
+                z-index: 71;
+                overflow: hidden;
+            }
+            
+            .itteammouseover {
+                height: 22vw;
+                width: 20vw;
+                opacity: 0.7;
+                background: #fe7c00;
+                position: absolute;
+                top: -100%;
+                left: 0%;
+                z-index: 72;
+                -webkit-transition: all ease-out 0.5s;
+                -moz-transition: all ease-out 0.5s;
+                -o-transition: all ease-out 0.5s;
+                -ms-transition: all ease-out 0.5s;
+                transition: all ease-out 0.5s;
+            }
+            
+            .itteamheading {
+                color: #ffffff;
+                font-size: 3vw;
+                font-family: Aclonica;
+            }
+            
+            .itteamname {
+                color: #ffffff;
+                font-size: 3vw;
+                font-family: Aladin;
+            }
+        </style>
+
+
+        <script>
+            function itteamon(clicked_id) {
+                document.getElementById(clicked_id + "mouseover").style.top = "0%";
+            }
+
+            function itteamoff(clicked_id) {
+                document.getElementById(clicked_id + "mouseover").style.top = "-100%";
+            }
+        </script>
+
+
+
+        <div class="itteamheading" style="position:absolute;top:12vw;left:40vw;">Contact</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
