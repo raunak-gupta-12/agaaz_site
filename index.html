@@ -825,7 +825,7 @@
         }
 
 
-        if (clicked_id == "contact") {
+        if (clicked_id == "Contact") {
             document.getElementById("teampc").style.visibility = "hidden";
             document.getElementById("eventpc").style.visibility = "hidden";
             document.getElementById("wrap").style.visibility = "hidden";
@@ -846,10 +846,15 @@
 
     function war(clicked_id) {
         document.getElementById("eventpc").style.visibility = "hidden";
-        document.getElementById("wrap").style.visibility = "visible";
-        document.getElementById("teampc").style.visibility = "hidden";
-        document.getElementById("sponsorspc").style.visibility = "hidden";
-        document.getElementById("aboutpc").style.visibility = "hidden";
+            document.getElementById("wrap").style.visibility = "visible";
+            document.getElementById("teampc").style.visibility = "hidden";
+            document.getElementById("sponsorspc").style.visibility = "hidden";
+            document.getElementById("aboutpc").style.visibility = "hidden";
+            document.getElementById("contactpc").style.visibility = "hidden";
+            document.getElementById("Schedule").style.visibility = "visible";
+            document.getElementById("Notices").style.visibility = "visible";
+            document.getElementById("side1").style.visibility = "visible";
+            document.getElementById("side2").style.visibility = "visible";
     }
 
     function eyeopen(clicked_id) {
@@ -1103,7 +1108,7 @@
             <p style="position:absolute;top:2%;left:13%;">About us</p>
         </div>
 
-        <div class="btn1" id="Vscc" onclick="colorcchange(this.id)" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:absolute;top:0%;left:90.4%;">
+        <div class="btn1" id="aagaaz" onclick="colorcchange(this.id)" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:absolute;top:0%;left:90.4%;">
             <p style="position:absolute;top:1%;left:2%;">Contact</p>
         </div>
 
@@ -1114,7 +1119,7 @@
         <img id="side1" style="position:fixed;bottom:0vw;left:0vw; height:5vw;width:20vw;" src="images/LFooter_Side.png" />
         <img id="side2" style="position:fixed;bottom:0vw;right:0vw; height:5vw;width:20vw;" src="images/RFooter_Side.png" />
 
-        <div class="btn1" id="Schedule" onclick="window.open('schedule/Schedule.pdf')" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:fixed;bottom:1%;left:3.4%;">
+        <div class="btn1" id="Schedule" onclick="window.open('schedule.pdf')" onmouseover="colorichange(this.id)" onmouseout="colorochange(this.id)" style="position:fixed;bottom:1%;left:3.4%;">
             <p style="position:absolute;top:1%;left:2%;">Schedule</p>
         </div>
 
